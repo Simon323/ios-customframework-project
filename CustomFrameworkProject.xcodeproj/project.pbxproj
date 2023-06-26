@@ -11,7 +11,7 @@
 		81AEE4532A4A27E2007E5BA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AEE4522A4A27E2007E5BA2 /* ContentView.swift */; };
 		81AEE4552A4A27E3007E5BA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81AEE4542A4A27E3007E5BA2 /* Assets.xcassets */; };
 		81AEE4582A4A27E3007E5BA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81AEE4572A4A27E3007E5BA2 /* Preview Assets.xcassets */; };
-		81AEE4602A4A2865007E5BA2 /* SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AEE45F2A4A2865007E5BA2 /* SDK.swift */; };
+		81AEE4632A4A34A7007E5BA2 /* CustomFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 81AEE4622A4A34A7007E5BA2 /* CustomFramework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,6 @@
 		81AEE4522A4A27E2007E5BA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81AEE4542A4A27E3007E5BA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81AEE4572A4A27E3007E5BA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		81AEE45F2A4A2865007E5BA2 /* SDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDK.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81AEE4632A4A34A7007E5BA2 /* CustomFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +57,6 @@
 				81AEE4522A4A27E2007E5BA2 /* ContentView.swift */,
 				81AEE4542A4A27E3007E5BA2 /* Assets.xcassets */,
 				81AEE4562A4A27E3007E5BA2 /* Preview Content */,
-				81AEE45F2A4A2865007E5BA2 /* SDK.swift */,
 			);
 			path = CustomFrameworkProject;
 			sourceTree = "<group>";
@@ -86,6 +85,9 @@
 			dependencies = (
 			);
 			name = CustomFrameworkProject;
+			packageProductDependencies = (
+				81AEE4622A4A34A7007E5BA2 /* CustomFramework */,
+			);
 			productName = CustomFrameworkProject;
 			productReference = 81AEE44D2A4A27E2007E5BA2 /* CustomFrameworkProject.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 81AEE4442A4A27E1007E5BA2;
+			packageReferences = (
+				81AEE4612A4A34A7007E5BA2 /* XCRemoteSwiftPackageReference "ios-customframework-package" */,
+			);
 			productRefGroup = 81AEE44E2A4A27E2007E5BA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +145,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AEE4602A4A2865007E5BA2 /* SDK.swift in Sources */,
 				81AEE4532A4A27E2007E5BA2 /* ContentView.swift in Sources */,
 				81AEE4512A4A27E2007E5BA2 /* CustomFrameworkProjectApp.swift in Sources */,
 			);
@@ -345,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		81AEE4612A4A34A7007E5BA2 /* XCRemoteSwiftPackageReference "ios-customframework-package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Simon323/ios-customframework-package";
+			requirement = {
+				kind = exactVersion;
+				version = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		81AEE4622A4A34A7007E5BA2 /* CustomFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81AEE4612A4A34A7007E5BA2 /* XCRemoteSwiftPackageReference "ios-customframework-package" */;
+			productName = CustomFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 81AEE4452A4A27E1007E5BA2 /* Project object */;
 }
