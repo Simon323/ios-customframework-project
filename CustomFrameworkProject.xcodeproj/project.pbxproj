@@ -356,7 +356,7 @@
 			repositoryURL = "https://github.com/Simon323/ios-customframework-package";
 			requirement = {
 				kind = exactVersion;
-				version = 0.0.1;
+				version = 0.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

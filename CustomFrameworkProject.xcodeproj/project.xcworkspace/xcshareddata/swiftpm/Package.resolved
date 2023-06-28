@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Simon323/ios-customframework-package",
       "state" : {
-        "revision" : "570fc32c6528a1959e7609da17c6f66b9e5d7c16",
-        "version" : "0.0.1"
+        "revision" : "87d6ed8b3a398e8dbf1973a3c2e9755a96090b42",
+        "version" : "0.0.2"
       }
     }
   ],
