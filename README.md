@@ -4,8 +4,8 @@ In Xcode
 1. `File` -> `Add Packages...`
 2. In search field paste `https://github.com/Simon323/ios-customframework-package`
 3. Select version
-    3.1 `0.0.1` - Package with source code
-    3.2 `0.0.2` - Package without source code
+3.1 `0.0.1` - Package with source code
+3.2 `0.0.2` - Package without source code
 
 # Clean build directory
 
