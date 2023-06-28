@@ -7,8 +7,11 @@ In Xcode
     - `0.0.1` - Package with source code
     - `0.0.2` - Package without source code
 
+![Package Dependencies](assets/package_dependencies.png)
+
 # Clean build directory
 
 After update / downgrade package from version `0.0.1` <-> `0.0.2` clean build directory.
 1. Use shortcut `Product` -> `Clean Build Folder`-> `⇧⌘K` == `Shift + Command + K`
 2. Rebuild shortcut `Product` -> `Build` ==  `⌘B` == `Command B`
+
